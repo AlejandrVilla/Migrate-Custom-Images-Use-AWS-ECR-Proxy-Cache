@@ -3,6 +3,8 @@
 ## 🚀 Overview
 This project migrates custom images to AWS ECR and sets up AWS ECR Pull-Through Cache for public images.
 
+![diagrama](./diagram.png)
+
 ## 🎯 Objectives
 ✅ Migrate custom images to AWS ECR  
 ✅ Use AWS ECR Proxy Cache for base images  
@@ -126,3 +128,6 @@ docker pull alpine
 ## 📌 Notes
 - AWS ECR will now serve as the single source for all container images.
 - Docker Hub is **disabled** to prevent unauthorized pulls.
+
+### Usefull links
+- [Bypass Docker Hub Rate Limits with ECR PullThrough Cache](https://garbe.io/blog/2024/04/09/bypass-docker-hub-rate-limits-with-ecr-pullthrough-cache/)
